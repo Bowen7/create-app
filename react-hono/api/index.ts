@@ -42,7 +42,7 @@ app.get('/', async (c) => {
 export default app
 
 if (import.meta.env.PROD) {
-  serve({ ...app, port: 3000 }, (info) => {
+  serve({ ...app, port: 4000 }, (info) => {
     // eslint-disable-next-line no-console
     console.log(`Listening on http://localhost:${info.port}`)
   })
